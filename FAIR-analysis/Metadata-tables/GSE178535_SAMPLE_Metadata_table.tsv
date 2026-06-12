@@ -1,0 +1,7 @@
+"sample_id"	"condition"	"BMI"	"AGE"	"SAMPLE_TIMEFRAME"	"SAMPLE_TIMEFRAME_DAYS"	"SAMPLE_TIMEFRAME_WEEKS"	"tissue_type"	"tissue_ontology_id"	"Pregnancy_Status"	"Pregnancy_Status_ontology_id"	"condition_ontology_id"
+"GSM5393469"	"Control"	NA	30	"sample ga/(d): 62"	62	8.85	"Decidua"	"UBERON:0002450"	"Pregnant"	"NCIT:C124295"	"EFO:0001461"
+"GSM5393470"	"Control"	NA	31	"sample ga/(d): 57"	57	8.14	"Decidua"	"UBERON:0002450"	"Pregnant"	"NCIT:C124295"	"EFO:0001461"
+"GSM5393471"	"Control"	NA	34	"sample ga/(d): 56"	56	8	"Decidua"	"UBERON:0002450"	"Pregnant"	"NCIT:C124295"	"EFO:0001461"
+"GSM5393472"	"RPL"	NA	33	"sample ga/(d): 55"	55	7.86	"Decidua"	"UBERON:0002450"	"Pregnant"	"NCIT:C124295"	"HP:0200067"
+"GSM5393473"	"RPL"	NA	33	"sample ga/(d): 61"	61	8.71	"Decidua"	"UBERON:0002450"	"Pregnant"	"NCIT:C124295"	"HP:0200067"
+"GSM5393474"	"RPL"	NA	33	"sample ga/(d): 54"	54	7.71	"Decidua"	"UBERON:0002450"	"Pregnant"	"NCIT:C124295"	"HP:0200067"

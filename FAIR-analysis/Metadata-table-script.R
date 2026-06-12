@@ -38,8 +38,8 @@ GSE65099_sample_meta <- data.frame(
       condition == "Control"   ~ "EFO:0001461",  # Experimental Control / Healthy,
       condition == "(Repeated) Implantation Failure" ~ "HP:0033712",
       TRUE                     ~ NA_character_
-      )
     )
+  )
 
 glimpse(GSE65099_sample_meta)
 # ============================================= # 
@@ -101,13 +101,13 @@ GSE178535_sample_meta <- data.frame(
   Pregnancy_Status_ontology_id = "NCIT:C124295") %>% 
   mutate(
     condition_ontology_id = case_when(
-    condition == "RPL"       ~ "HP:0200067", # Recurrent Pregnancy Loss
-    condition == "Infertile" ~ "HP:0008222", # Female Infertility
-    condition == "Control"   ~ "EFO:0001461",  # Experimental Control / Healthy,
-    condition == "(Repeated) Implantation Failure" ~ "HP:0033712",
-    TRUE                     ~ NA_character_   
+      condition == "RPL"       ~ "HP:0200067", # Recurrent Pregnancy Loss
+      condition == "Infertile" ~ "HP:0008222", # Female Infertility
+      condition == "Control"   ~ "EFO:0001461",  # Experimental Control / Healthy,
+      condition == "(Repeated) Implantation Failure" ~ "HP:0033712",
+      TRUE                     ~ NA_character_   
+    )
   )
-)
 
 glimpse(GSE178535_sample_meta)
 # ============================================= # 
@@ -278,29 +278,29 @@ glimpse(GSE165004_meta_data)
 
 # print(GSE165004_meta_data$geo_accession)
 GSE165004_rownames = c("GSM5024320", "GSM5024321", "GSM5024322",
- "GSM5024323", "GSM5024324", "GSM5024325",
- "GSM5024326", "GSM5024327", "GSM5024328",
- "GSM5024329", "GSM5024330", "GSM5024331",
- "GSM5024332", "GSM5024333", "GSM5024334",
- "GSM5024335", "GSM5024336", "GSM5024337",
- "GSM5024338", "GSM5024339", "GSM5024340",
- "GSM5024341", "GSM5024342", "GSM5024343",
- "GSM5024344", "GSM5024345", "GSM5024346",
- "GSM5024347", "GSM5024348", "GSM5024349",
- "GSM5024350", "GSM5024351", "GSM5024352",
- "GSM5024353", "GSM5024354", "GSM5024355",
- "GSM5024356", "GSM5024357", "GSM5024358",
- "GSM5024359", "GSM5024360", "GSM5024361",
- "GSM5024362", "GSM5024363", "GSM5024364",
- "GSM5024365", "GSM5024366", "GSM5024367",
- "GSM5024368", "GSM5024369", "GSM5024370",
- "GSM5024371", "GSM5024372", "GSM5024373",
- "GSM5024374", "GSM5024375", "GSM5024376",
- "GSM5024377", "GSM5024378", "GSM5024379",
- "GSM5024380", "GSM5024381", "GSM5024382",
- "GSM5024383", "GSM5024384", "GSM5024385",
- "GSM5024386", "GSM5024387", "GSM5024388",
- "GSM5024389", "GSM5024390", "GSM5024391")
+                       "GSM5024323", "GSM5024324", "GSM5024325",
+                       "GSM5024326", "GSM5024327", "GSM5024328",
+                       "GSM5024329", "GSM5024330", "GSM5024331",
+                       "GSM5024332", "GSM5024333", "GSM5024334",
+                       "GSM5024335", "GSM5024336", "GSM5024337",
+                       "GSM5024338", "GSM5024339", "GSM5024340",
+                       "GSM5024341", "GSM5024342", "GSM5024343",
+                       "GSM5024344", "GSM5024345", "GSM5024346",
+                       "GSM5024347", "GSM5024348", "GSM5024349",
+                       "GSM5024350", "GSM5024351", "GSM5024352",
+                       "GSM5024353", "GSM5024354", "GSM5024355",
+                       "GSM5024356", "GSM5024357", "GSM5024358",
+                       "GSM5024359", "GSM5024360", "GSM5024361",
+                       "GSM5024362", "GSM5024363", "GSM5024364",
+                       "GSM5024365", "GSM5024366", "GSM5024367",
+                       "GSM5024368", "GSM5024369", "GSM5024370",
+                       "GSM5024371", "GSM5024372", "GSM5024373",
+                       "GSM5024374", "GSM5024375", "GSM5024376",
+                       "GSM5024377", "GSM5024378", "GSM5024379",
+                       "GSM5024380", "GSM5024381", "GSM5024382",
+                       "GSM5024383", "GSM5024384", "GSM5024385",
+                       "GSM5024386", "GSM5024387", "GSM5024388",
+                       "GSM5024389", "GSM5024390", "GSM5024391")
 all(GSE165004_rownames == GSE165004_meta_data$geo_accession)
 rm(GSE165004_rownames)
 
@@ -343,12 +343,12 @@ GSE165004_sample_meta <- data.frame(
   Pregnancy_Status_ontology_id = "NCIT:C82475") %>% 
   mutate(
     condition_ontology_id = case_when(
-    condition == "RPL"       ~ "HP:0200067", # Recurrent Pregnancy Loss
-    condition == "Infertile" ~ "HP:0008222", # Female Infertility
-    condition == "Control"   ~ "EFO:0001461",  # Experimental Control / Healthy,
-    condition == "(Repeated) Implantation Failure" ~ "HP:0033712",
-    TRUE                     ~ NA_character_)
-    )
+      condition == "RPL"       ~ "HP:0200067", # Recurrent Pregnancy Loss
+      condition == "Infertile" ~ "HP:0008222", # Female Infertility
+      condition == "Control"   ~ "EFO:0001461",  # Experimental Control / Healthy,
+      condition == "(Repeated) Implantation Failure" ~ "HP:0033712",
+      TRUE                     ~ NA_character_)
+  )
 
 rownames(GSE165004_sample_meta)
 # ============================================= # 
@@ -361,7 +361,48 @@ Folder_of_your_choice <- rstudioapi::selectDirectory()
 setwd(Folder_of_your_choice)
 list.files()
 # GSE65099_sample_meta
+glimpse(GSE65099_sample_meta)
 exists("GSE65099_sample_meta")
+write.table(GSE65099_sample_meta, file = "GSE65099_SAMPLE_Metadata_table.tsv", sep = "\t", dec = ".", row.names=FALSE)
+write.table(GSE65099_sample_meta, file = "GSE65099_SAMPLE_Metadata_table.csv", sep = ";", dec = ".", row.names=TRUE)
+
+
+# GSE113790_sample_meta
+exists("GSE113790_sample_meta")
+write.table(GSE113790_sample_meta, file = "GSE113790_SAMPLE_Metadata_table.tsv", sep = "\t", dec = ".", row.names=FALSE)
+write.table(GSE113790_sample_meta, file = "GSE113790_SAMPLE_Metadata_table.csv", sep = ";", dec = ".", row.names=FALSE)
+
+
+# GSE178535_sample_meta
+exists("GSE178535_sample_meta")
+write.table(GSE178535_sample_meta, file = "GSE178535_SAMPLE_Metadata_table.tsv", sep = "\t",, dec = ".", row.names=FALSE)
+write.table(GSE178535_sample_meta, file = "GSE178535_SAMPLE_Metadata_table.csv", sep = ";", dec = ".", row.names=FALSE)
+
+
+# GSE183555_sample_meta
+exists("GSE183555_sample_meta")
+write.table(GSE183555_sample_meta, file = "GSE183555_SAMPLE_Metadata_table.tsv", sep = "\t", dec = ".", row.names=FALSE)
+write.table(GSE183555_sample_meta, file = "GSE183555_SAMPLE_Metadata_table.csv", sep = ";", dec = ".", row.names=FALSE)
+
+# GSE22490_sample_meta
+exists("GSE22490_sample_meta")
+write.table(GSE22490_sample_meta, file = "GSE22490_SAMPLE_Metadata_table.tsv", sep = "\t", dec = ".", row.names=FALSE)
+write.table(GSE22490_sample_meta, file = "GSE22490_SAMPLE_Metadata_table.csv", sep = ";", dec = ".", row.names=FALSE)
+
+
+# GSE26787_sample_meta
+exists("GSE26787_sample_meta")
+write.table(GSE26787_sample_meta, file = "GSE26787_SAMPLE_Metadata_table.tsv", sep = "\t", dec = ".", row.names=FALSE)
+write.table(GSE26787_sample_meta, file = "GSE26787_SAMPLE_Metadata_table.csv", sep = ";", dec = ".", row.names=FALSE)
+
+
+# GSE165004_sample_meta
+exists("GSE165004_sample_meta")
+write.table(GSE165004_sample_meta, file = "GSE165004_SAMPLE_Metadata_table.tsv", sep = "\t", dec = ".", row.names=FALSE)
+write.table(GSE165004_sample_meta, file = "GSE165004_SAMPLE_Metadata_table.csv", sep = ";", dec = ".", row.names=FALSE)
+
+
+
 write.table(GSE65099_sample_meta, file = "GSE65099_SAMPLE_Metadata_table.csv", sep = ";", dec = ".", row.names=TRUE)
 
 
@@ -388,7 +429,4 @@ write.table(GSE22490_sample_meta, file = "GSE22490_SAMPLE_Metadata_table.csv", s
 exists("GSE26787_sample_meta")
 write.table(GSE26787_sample_meta, file = "GSE26787_SAMPLE_Metadata_table.csv", sep = ";", dec = ".", row.names=FALSE)
 
-
-# GSE165004_sample_meta
-exists("GSE165004_sample_meta")
 write.table(GSE165004_sample_meta, file = "GSE165004_SAMPLE_Metadata_table.csv", sep = ";", dec = ".", row.names=FALSE)

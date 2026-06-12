@@ -1,0 +1,7 @@
+"sample_id"	"condition"	"BMI"	"AGE"	"SAMPLE_TIMEFRAME"	"SAMPLE_TIMEFRAME_DAYS"	"SAMPLE_TIMEFRAME_WEEKS"	"tissue_type"	"tissue_ontology_id"	"Pregnancy_Status"	"Pregnancy_Status_ontology_id"	"condition_ontology_id"
+"GSM3119483"	"RPL"	NA	25	"7.083 ± 1.567 gestational weeks"	NA	7	"Decidua"	"UBERON:0002450"	"Pregnant"	"NCIT:C124295"	"HP:0200067"
+"GSM3119484"	"RPL"	NA	23	"7.083 ± 1.567 gestational weeks"	NA	7	"Decidua"	"UBERON:0002450"	"Pregnant"	"NCIT:C124295"	"HP:0200067"
+"GSM3119485"	"RPL"	NA	24	"7.083 ± 1.567 gestational weeks"	NA	7	"Decidua"	"UBERON:0002450"	"Pregnant"	"NCIT:C124295"	"HP:0200067"
+"GSM3119486"	"Control"	NA	24	"7.083 ± 1.567 gestational weeks"	NA	7	"Decidua"	"UBERON:0002450"	"Pregnant"	"NCIT:C124295"	"EFO:0001461"
+"GSM3119487"	"Control"	NA	24	"7.083 ± 1.567 gestational weeks"	NA	7	"Decidua"	"UBERON:0002450"	"Pregnant"	"NCIT:C124295"	"EFO:0001461"
+"GSM3119488"	"Control"	NA	25	"7.083 ± 1.567 gestational weeks"	NA	7	"Decidua"	"UBERON:0002450"	"Pregnant"	"NCIT:C124295"	"EFO:0001461"
